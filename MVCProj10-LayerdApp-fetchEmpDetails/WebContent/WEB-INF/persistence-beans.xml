@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+		http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context-4.3.xsd">
+
+<!-- Get the server managed JDBC DataSource obj from Jndi Registry of Underlying server (create connection pool in server) -->
+
+<bean id="jofb" class="org.springframework.jndi.JndiObjectFactoryBean">
+	<property name="jndiName" value="java:/comp/env/mysqlDsjndi"/>
+</bean>
+
+<!-- Cfg JdbcTemplate  injecting DataSource -->
+  <bean id="template" class="org.springframework.jdbc.core.JdbcTemplate">
+      <constructor-arg  name="dataSource"  ref="jofb"/>  <!-- Here jofb obj will not be injected.. its Resultant DS object will be injected -->
+  </bean>
+
+
+<context:component-scan base-package="com.dav.dao"/>
+</beans>
