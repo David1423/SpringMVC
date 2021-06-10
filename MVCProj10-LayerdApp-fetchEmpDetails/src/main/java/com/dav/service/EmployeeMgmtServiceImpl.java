@@ -24,8 +24,8 @@ public class EmployeeMgmtServiceImpl implements IEmployeeMgmtService {
 		
 		//create empty List of BO Objects
 		List<EmployeeBO> listBO = null;
-		 List<EmployeeDTO> listDTO=new ArrayList<EmployeeDTO>();
-		//get all the employee details from DAO
+		//create empty List of DTO Objects
+		 List<EmployeeDTO> listDTO=new ArrayList<EmployeeDTO>();		//get all the employee details from DAO
 		listBO = dao.fetchEmpDetails();
 		//copy all properties of BO to DTO
 		//BeanUtils.copyProperties(listBO, listDTO);
