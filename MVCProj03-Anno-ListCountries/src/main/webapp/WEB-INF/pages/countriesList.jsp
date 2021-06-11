@@ -6,10 +6,13 @@
     <h2>${sysDate }</h2>
     <c:choose>
     	<c:when test="${!empty countriesInfo}" >
-    	
-			<c:forEach var="country" items="${countriesInfo}">
-							<li><b>${country }</b></li>
-			</c:forEach>    		
+    	<table border="1 red;">
+    	<tr><th>SR.No</th><th>COUNTRY</th></tr>
+			<c:forEach varStatus="SrNo"  var="country" items="${countriesInfo}">
+							<tr><td>${SrNo.count }</td>
+							<td><b>${country }</b></td></tr>
+			</c:forEach>
+			</table>
     	</c:when>
     	
     	<c:otherwise>
