@@ -27,13 +27,13 @@ public class StudentController {
 
 	@RequestMapping(value = "/student", method = RequestMethod.POST)
 	public String FormSubmitProcess(@RequestParam("sname") String sname, @RequestParam("sadd") String sadd,
-			@RequestParam("sclass") String sclass, @RequestParam("mobile") String mobile, Map<String, Object> map,
+			@RequestParam("sclass") String sclass, @RequestParam("mobile") Long mobile, Map<String, Object> map,
 			@ModelAttribute("stud") StudentDetails details) {
 
 		details.setSname(sname);
 		details.setSadd(sadd);
 		details.setSclass(sclass);
-		details.setMobile(mobile);
+		details.setMobile((long)mobile);
 
 		map.put("result", details != null ? "<span style='color:green'>Registration succeeded</span>"
 				: "<span style='color:red'>Registration failed</span>");

@@ -5,14 +5,14 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" >
 </head>
 <center>
-    <h1>${result }</h1><br>
-    <h2>Student Details</h2><br>
+    <div class="fs-2 fw-bold">${result }</div>
+    <h2 class="fs-3 fw-lighter">Student Details</h2><br>
     <%-- <c:if test="${!empty stud }">
     	Student Name :: ${details.getSname() }<br>
     	Student Address :: ${details.getSadd() }<br>
     	Student Class :: ${details.getSclass() }<br>
     	Student Mobile :: ${details.getMobile() }<br>
     </c:if>  --%>
-    <h3>${stud }</h3>
+    <h3 class=fw-normal>${stud }</h3>
 </center>
     
