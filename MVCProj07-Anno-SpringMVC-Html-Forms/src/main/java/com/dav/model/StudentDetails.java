@@ -8,6 +8,6 @@ public class StudentDetails {
 	public String sname;
 	public String sadd;
 	public String sclass;
-	public String mobile;
+	public Long mobile;
 	
 }

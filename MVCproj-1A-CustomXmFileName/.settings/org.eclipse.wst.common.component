@@ -2,7 +2,6 @@
 <project-modules id="moduleCoreId" project-version="1.5.0">
 	<wb-module deploy-name="MVCproj-1A-CustomXmFileName">
 		<property name="context-root" value="MVCproj-1A-CustomXmFileName"/>
-		<wb-resource deploy-path="/WEB-INF/classes" source-path="src/main/resources"/>
 		<wb-resource deploy-path="/WEB-INF/classes" source-path="src/main/java"/>
 	</wb-module>
 </project-modules>

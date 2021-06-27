@@ -6,29 +6,30 @@
 
 <div class="container">
 
-<div class=" fs-2 text-center text-danger">Student Registration Form</div>
+<div class=" fs-2 text-center text-danger">Registaration Form for Students</div>
 <div class="col=md-3" style="border-radius: 3em;">
-<form method="post"  class="form-md bg-info"  align="center">
+<form method="post"  class=" shadow-lg form-md bg-info"  align="center">
+
 <caption>Student Registration Form</caption>
 
 	<div class="mb-2">
 		<!-- <label for="sname" class="form-label">Student Name</label> -->
-		<input class="form-contorl" type="text" name="sname"  id="sname" placeholder="Student Name"  style="border-radius: 3px;"/>
+		<input class="form-contorl" type="text" name="sname"  id="sname" placeholder="Student Name"  style="border-radius: 6px;"/>
 		</div>
 
 	<div class="mb-2">
 	<!-- <label for="sadd" class="form-label">Student Address</label> -->
-	<input class="form-contorl" type="text" name="sadd" placeholder="Student Address" style="border-radius:3px;"/>
+	<input class="form-contorl" type="text" name="sadd" placeholder="Student Address" style="border-radius:6px;"/>
 	</div>
 	
 	<div class="mb-2">
 	<!-- <label for="sclass" class="form-label">Student class</label> -->
-	<input class="form-contorl" type="text" name="sclass" placeholder="Student Class" style="border-radius:3px;"/>
+	<input class="form-contorl" type="text" name="sclass" placeholder="Student Class" style="border-radius:6px;"/>
 	</div>
 	
 	<div class="mb-2">
 <!-- 	<label for="smobile" class="form-label">Student mobile</label> -->
-	<input class="form-contorl" type="text" name="mobile" placeholder="Student Mobile" style="border-radius:3px;">
+	<input class="form-contorl" type="number" name="mobile" placeholder="Student Mobile" style="border-radius:6px;"/>
 	</div>
 	<div class="mb-2">
 	<button class="btn btn-primary mb-3"  type="submit" >Register</button>
