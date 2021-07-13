@@ -28,7 +28,8 @@ public class StudentController {
 	@RequestMapping(value = "/student", method = RequestMethod.POST)
 	public String FormSubmitProcess(@RequestParam("sname") String sname, @RequestParam("sadd") String sadd,
 			@RequestParam("sclass") String sclass, @RequestParam("mobile") Long mobile, Map<String, Object> map,
-			@ModelAttribute("stud") StudentDetails details) {
+			@ModelAttribute("stud") StudentDetails details)
+	{
 
 		details.setSname(sname);
 		details.setSadd(sadd);
